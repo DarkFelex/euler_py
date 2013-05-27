@@ -6,15 +6,16 @@
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
 # find the sum of the even-valued terms.
 
-result = 0
-a = 1
-b = 1
-for i in range(1, 100):
-	a, b = b, a+b
-	if a < 4000000:
-		if a % 2 == 0:
-			result += a
-			print(result)
-	else:
-		print "over max"
-		exit()
+def result():
+	result = 0
+	a = 1
+	b = 1
+	for i in range(1, 100):
+		a, b = b, a+b
+		if a < 4000000:
+			if a % 2 == 0:
+				result += a
+		else:
+			return result
+
+print(result())
