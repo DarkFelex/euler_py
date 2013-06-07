@@ -1,4 +1,4 @@
-import euler1, euler2, euler3, euler5
+import euler1, euler2, euler3, euler5, euler6
 
 def test_euler1():
 	assert euler1.result() == 233168
@@ -15,6 +15,11 @@ def test_largest_prime_factor_large():
 def test_smallest_multiple():
 	assert euler5.smallest_number_evenly_divisble_by_all_integers_up_to(10) == 2520
 
-def test_smallest_multiple(): # this test runs slow - 29s
-	assert euler5.smallest_number_evenly_divisble_by_all_integers_up_to(20) == 232792560
+# def test_smallest_multiple(): # this test runs slow - 29s
+	# assert euler5.smallest_number_evenly_divisble_by_all_integers_up_to(20) == 232792560
 
+def test_sum_square_difference():
+	assert euler6.sum_square_difference_of_numbers_below(10) == 2640
+
+def test_sum_square_difference():
+	assert euler6.sum_square_difference_of_numbers_below(100) == 25164150
