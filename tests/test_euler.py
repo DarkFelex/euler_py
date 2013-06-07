@@ -15,5 +15,6 @@ def test_largest_prime_factor_large():
 def test_smallest_multiple():
 	assert euler5.smallest_number_evenly_divisble_by_all_integers_up_to(10) == 2520
 
-# def test_smallest_multiple():
-	# assert euler5.smallest_number_evenly_divisble_by_all_integers_up_to(20) == 232792560
+def test_smallest_multiple(): # this test runs slow - 29s
+	assert euler5.smallest_number_evenly_divisble_by_all_integers_up_to(20) == 232792560
+
