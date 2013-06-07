@@ -1,4 +1,4 @@
-import euler1, euler2, euler3, euler5, euler6
+import euler1, euler2, euler3, euler5, euler6, euler9
 
 def test_euler1():
 	assert euler1.result() == 233168
@@ -23,3 +23,10 @@ def test_sum_square_difference():
 
 def test_sum_square_difference():
 	assert euler6.sum_square_difference_of_numbers_below(100) == 25164150
+
+def test_pythagorean_triplet():
+	product_of_a_b_c = 60
+	assert euler9.pythagorean_triplet_adds_up_to(12) == product_of_a_b_c
+
+# def test_pythagorean_triplet():
+	# assert euler9.pythagorean_triplet(1000) == 31875000
