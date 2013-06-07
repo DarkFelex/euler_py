@@ -1,4 +1,4 @@
-import euler1, euler2, euler3, euler5, euler6, euler9
+import euler1, euler2, euler3, euler5, euler6, euler9, euler14
 
 def test_euler1():
 	assert euler1.result() == 233168
@@ -31,3 +31,5 @@ def test_pythagorean_triplet():
 # def test_pythagorean_triplet(): # test runs slow - 19s
 	# assert euler9.pythagorean_triplet_adds_up_to(1000) == 31875000
 
+def test_collatz_sequence():
+	assert euler14.number_of_terms_in_collatz_sequence_starting_at(13) == 10
