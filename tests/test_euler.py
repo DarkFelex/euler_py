@@ -28,5 +28,6 @@ def test_pythagorean_triplet():
 	product_of_a_b_c = 60
 	assert euler9.pythagorean_triplet_adds_up_to(12) == product_of_a_b_c
 
-# def test_pythagorean_triplet():
-	# assert euler9.pythagorean_triplet(1000) == 31875000
+# def test_pythagorean_triplet(): # test runs slow - 19s
+	# assert euler9.pythagorean_triplet_adds_up_to(1000) == 31875000
+

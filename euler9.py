@@ -7,6 +7,9 @@
 # Find the product abc.
 
 def pythagorean_triplet_adds_up_to(number):
-	if ((a + b + c == number) && (a * a + b * b == c * c))
-		return number
+	for a in range(1, number -1):
+		for b in range(1, number -1):
+			for c in range(1, number -1):
+				if ((a + b + c == number) and (a * a + b * b == c * c)):
+					return a * b * c
 
